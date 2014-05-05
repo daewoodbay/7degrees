@@ -1,0 +1,17 @@
+<nav id="journal-pagination" role="pagination">
+  <div class="container">
+    {{#if prev}}
+      <div class="col-1 col-offset-1 newer-posts">
+        <a class="button" href="{{pageUrl prev}}" rel="prev">&laquo; Newer</a>
+      </div>
+    {{/if}}
+
+    <span class="col-1 {{#if prev}}{{else}}col-offset-2 {{/if}}page-number">Page {{page}} of {{pages}}</span>
+
+    {{#if next}}
+      <div class="col-1 older-posts">
+        <a class="button" href="{{pageUrl next}}" rel="next">Older &raquo;</a>
+      </div>
+    {{/if}}
+  </div>
+</nav>

@@ -1,0 +1,108 @@
+.journal-post-preview + .journal-post-preview {
+  margin-top: 60px;
+}
+
+.post-meta {
+  color: #a5a5a5;
+  padding-right: 20px;
+  text-align: right;
+  font-size: .875em;
+}
+.post-meta p {
+  margin-bottom: 0;
+}
+.post-meta time {
+  text-align: right;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.post-meta .title {
+  display: inline-block;
+  font-size: .875em;
+  font-family: "Oswald", "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  border-bottom: solid 2px #b2b2b2;
+  margin-top: 20px;
+}
+.post-meta > .title:first-child {
+  margin-top: 0;
+}
+.post-meta .author a {
+  color: #a5a5a5;
+}
+.post-meta .author a:hover {
+  color: #e9914b;
+}
+@media screen and (max-width: 767px) {
+  .post-meta {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .post-meta .author {
+    display: none;
+  }
+}
+
+.journal-post-detail .post-content h1,
+.journal-post-detail .post-content h2,
+.journal-post-detail .post-content h3,
+.journal-post-detail .post-content h4,
+.journal-post-detail .post-content h5,
+.journal-post-detail .post-content h6 {
+  margin-top: 1.2em;
+}
+.journal-post-detail .post-content > h1:first-child,
+.journal-post-detail .post-content > h2:first-child,
+.journal-post-detail .post-content > h3:first-child,
+.journal-post-detail .post-content > h4:first-child,
+.journal-post-detail .post-content > h5:first-child,
+.journal-post-detail .post-content > h6:first-child {
+  margin-top: 0;
+}
+.journal-post-detail .post-content > p.hidden:first-child + h1, .journal-post-detail .post-content > p.hidden:first-child + h2, .journal-post-detail .post-content > p.hidden:first-child + h3, .journal-post-detail .post-content > p.hidden:first-child + h4, .journal-post-detail .post-content > p.hidden:first-child + h5, .journal-post-detail .post-content > p.hidden:first-child + h6 {
+  margin-top: 0;
+}
+.journal-post-detail .post-content ol, .journal-post-detail .post-content ul {
+  margin-left: 20px;
+}
+
+#journal-author {
+  background: #1f1a16;
+  color: #f9f9f9;
+  padding: 60px 20px;
+}
+#journal-author .title {
+  text-align: right;
+  padding-right: 20px;
+}
+@media screen and (max-width: 767px) {
+  #journal-author .title {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+#journal-author h3 {
+  margin-top: 0;
+}
+#journal-author p {
+  margin-bottom: 5px;
+}
+
+#journal-post-comments {
+  padding: 60px 20px 0 20px;
+}
+#journal-post-comments .title {
+  text-align: right;
+  padding-right: 20px;
+}
+#journal-post-comments .title h3 {
+  margin-top: 0;
+}
+#journal-post-comments .title + * {
+  padding-top: 2px;
+}
+@media screen and (max-width: 767px) {
+  #journal-post-comments .title {
+    text-align: left;
+  }
+}

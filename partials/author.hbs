@@ -1,0 +1,17 @@
+{{#post.author}}
+  {{#if name}}
+    <section id="journal-author">
+      <div class="container">
+        <div class="col-1 title">
+          <h3>About the author</h3>
+        </div>
+        <div class="col-3">
+          <h3>{{name}}</h3>
+          {{#if location}}<p>{{location}}</p>{{/if}}
+          {{#if bio}}<p>{{bio}}</p>{{/if}}
+          {{#if website}}<p><a href="{{website}}">{{website}}</a></p>{{/if}}
+        </div>
+      </div>
+    </section>
+  {{/if}}
+{{/post.author}}

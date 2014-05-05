@@ -1,0 +1,41 @@
+{{!< default}}
+
+{{! The main content area on the homepage }}
+<section id="journal-content" role="main">
+  <div class="container">
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+      <article class="journal-post-preview {{post_class}}">
+        <header class="clearfix">
+          <a href="{{url}}"><h1 class="col-3 col-offset-1">{{title}}</h1></a>
+        </header>
+
+        <div class="clearfix">
+
+          
+          <div class="col-1 post-meta">
+            <time class="title" datetime="{{date format='YYYY-MM-DD'}}">
+              <span class="day" title="{{date format="DD"}}">{{date format="DD"}}</span>
+              <span class="month" title="{{date format="MMMM"}}">{{date format="MMM"}}</span>
+            </time>
+
+            {{#if featured}}<p class="featured">Featured</p>{{/if}}
+            {{#if tags}}<p class="tags">{{tags}}</p>{{/if}}
+          </div>
+
+          <div class="col-3 post-excerpt">
+            <p class="read">{{excerpt}}&hellip;</p>
+            <a class="button accent" href="{{url}}">Read more &raquo;</a>
+          </div>
+
+
+
+        </div>
+      </article>
+    {{/foreach}}
+
+  </div>
+
+  {{pagination}}
+</section>

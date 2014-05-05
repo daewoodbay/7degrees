@@ -1,0 +1,42 @@
+{{!< default}}
+
+<section id="journal-content" role="main">
+  <div class="container">
+
+    <article class="journal-post-detail {{post_class}}">
+      {{#post}}
+        <header class="clearfix">
+          <h1 class="col-3 col-offset-1">{{title}}</h1>
+        </header>
+
+        <div class="clearfix">
+          <div class="col-1 post-meta">
+            <time class="title" datetime="{{date format='YYYY-MM-DD'}}">
+              <span class="day" title="{{date format="DD"}}">{{date format="DD"}}</span>
+              <span class="month" title="{{date format="MMMM"}}">{{date format="MMM"}}</span>
+            </time>
+
+            {{#if tags}}
+              <p class="tags">
+                <span class="title">Posted in</span><br />
+                <span>{{tags}}</span>
+              </p>
+            {{/if}}
+
+            {{#if author.name}}
+              <p class="author">
+                <span class="title">Posted by</span><br />
+                <a href="{{author.website}}" target="_blank">{{author.name}}</a>
+              </p>
+            {{/if}}
+          </div>
+
+          <div class="col-3 post-content">
+            {{content}}
+          </div>
+        </div>
+      {{/post}}
+    </article>
+
+  </div>
+</section>
