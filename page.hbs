@@ -12,23 +12,12 @@
         <div class="clearfix">
           <div class="col-1 post-meta">
             <time class="title" datetime="{{date format='YYYY-MM-DD'}}">
-              <span class="day" title="{{date format="DD"}}">{{date format="DD"}}</span>
-              <span class="month" title="{{date format="MMMM"}}">{{date format="MMM"}}</span>
+              <span class="day" title="{{date format="DD"}}"></span>
+              <span class="month" title="{{date format="MMMM"}}"></span>
             </time>
 
-            {{#if tags}}
-              <p class="tags">
-                <span class="title">Posted in</span><br />
-                <span>{{tags}}</span>
-              </p>
-            {{/if}}
 
-            {{#if author.name}}
-              <p class="author">
-                <span class="title">Posted by</span><br />
-                <a href="{{author.website}}" target="_blank">{{author.name}}</a>
-              </p>
-            {{/if}}
+  
           </div>
 
           <div class="col-3 post-content">
